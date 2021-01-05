@@ -168,7 +168,7 @@ setGeneric("dbClearResult",
 #' dbDisconnect(con)
 setGeneric("dbColumnInfo",
   def = function(res, ...) standardGeneric("dbColumnInfo"),
-  valueClass = "data.frame"
+  valueClass = "data.table"
 )
 
 #' Get the statement associated with a result set

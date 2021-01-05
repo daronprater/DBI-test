@@ -99,7 +99,7 @@ show_result <- function(object) {
 #' @export
 setGeneric("dbFetch",
   def = function(res, n = -1, ...) standardGeneric("dbFetch"),
-  valueClass = "data.frame"
+  valueClass = "data.table"
 )
 
 #' @rdname hidden_aliases
@@ -112,7 +112,7 @@ setMethod("dbFetch", signature("DBIResult"), function(res, n = -1, ...) {
 #' @export
 setGeneric("fetch",
   def = function(res, n = -1, ...) standardGeneric("fetch"),
-  valueClass = "data.frame"
+  valueClass = "data.table"
 )
 
 #' Clear a result set
